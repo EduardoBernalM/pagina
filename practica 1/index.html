@@ -1,5 +1,56 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            body>*{
+                border: 2px solid black;
+            }
+            li{
+                display: inline-block;
+            
+                border-radius: 30px;
+                box-shadow: 20px 10px 5px black;
+                border: 5px solid ;
+                color:skyblue;
+                padding: 1em;
+                margin: 5px;
+                 width: 25%;
+                 height: 25%;
+                
+            }
+        
+            div.contenedor{
+                justify-content: center;
+                display:flex;
+            }
+            main{
+               
+                justify-content: center;
+                border: 10px solid black;
+                width: 50%;
+                
+            }
+            aside{
+                width: 50%;
+                border: 10px solid black;
+                align-content: center;
+            }
+            footer{
+                width: 50%;
+                height: 50%;
+                border: 10px solid brown;
+
+            }
+            header{
+                justify-content: center;
+                border: 10px solid black;
+                display: flex;
+            }
+        
+
+
+        </style>
+    </head>
     <body>
         <header>
             <h1>Encabezado nivel 1</h1>
@@ -12,15 +63,17 @@
                 <li><a href="4">Enlace4</a></li>
             </ul>
         </nav>
+        <div class="contenedor">
         <main>
             <section>
             <h2>Encabezado nivel 2</h2>
-            <img src="img/unverano.jpg" alt="imagen de album" width="250" height="150">
-            <p   >Esta imagen representa un album realizado por un artista que en estos momentos se encuentra en top global</p> 
+            <img src="img/PILARES.png" alt="escuela" width="250" height="150">
+            <p>Escuela de codigo </p> 
             </section>
         </main>
         <aside>
             <h2>Registro</h2>
+            <img src="img/pilar.png" alt="escuela">
             <div>
                 <label for="opcion">Opcion 1</label>
                 <input type="checkbox" id="opcion">
@@ -33,9 +86,8 @@
                 <label for="opcion">Opcion 3</label>
                 <input type="checkbox" id="opcion">
             </div>
-
-
         </aside>
+        </div>
         <footer>
             <label for="text">Texto</label>
             <input type="text">
